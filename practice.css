@@ -1,0 +1,54 @@
+@charset 'utf-8';
+
+html {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 14px;
+}
+body {
+    overflow-x: hidden;
+    color: rgb(29, 29, 31);
+    letter-spacing: -0.05em;
+    background: white;
+}
+p {
+    line-height: 1.6;
+}
+a {
+    color: rgb(29, 29, 31);
+    text-decoration: none;
+}
+
+
+.global-nav {
+    /* 첫 줄 메뉴 높이 설정 */
+    background: palevioletred;
+    height: 44px;
+}
+.local-nav {
+    /* 첫 줄 메뉴 높이 설정 */
+    background: palevioletred;
+    height: 52px;
+    border-bottom: 1px solid #bbb;
+}
+.global-nav-links,
+.local-nav-links {
+    /* 가로 최대 크기와 가운데 정렬, 각 메뉴들의 간격(flex) 설정 */
+    display: flex;
+    /*justify-content: space-between; 공통된 부분은 공유하고 나머지 제외하는 부분은 따로!*/ 
+    align-items: center;
+    height: 100%;       /* align-items 높이 필요해서 부모 요소의 높이 만큼 자동적으로 차지하도록 설정함. */
+    max-width: 1000px;
+    margin: 0 auto;
+    background: green;
+}
+.global-nav-links {
+    justify-content: space-between;
+}
+.product-name {
+    /* margin auto는 내가 사용할 수 있는 왼쪽오른쪽 마진을 꽉 채워서 사용할 수 있다. 그래서 애용하는 것임. */
+    margin-right: auto;
+}
+.local-nav-links a:not(.product-name){
+    margin-left: 2em;
+}
+
