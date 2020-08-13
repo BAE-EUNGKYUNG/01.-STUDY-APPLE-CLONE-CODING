@@ -17,7 +17,13 @@ a {
     color: rgb(29, 29, 31);
     text-decoration: none;
 }
-
+body.before-load {
+	overflow: hidden;
+}
+.container {
+	/* iPhone 가로 스크롤 방지 */
+	overflow-x: hidden;
+}
 
 .global-nav {
     /* 첫 줄 메뉴 높이 설정 */
