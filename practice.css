@@ -25,6 +25,8 @@ body.before-load {
 	overflow-x: hidden;
 }
 
+
+
 .global-nav, .local-nav {
     padding: 0 1rem;
 }
@@ -60,6 +62,8 @@ body.before-load {
     margin-left: 2em;
 }
 
+
+
 /* 공통 스크롤 섹션과 스크롤 섹션 0번 */
 .scroll-section {
     padding-top: 50vh;
@@ -81,6 +85,8 @@ body.before-load {
     font-weight: bold;
     text-align: center;
 }
+
+
 /* 스크롤 섹션 1번 */
 .description {
     font-size: 1.2rem;
@@ -90,6 +96,53 @@ body.before-load {
 .description strong {
     color: rgb(29, 29, 31);
     font-size: 3rem;
-    margin-right: 0.2em;
+    margin-right: 0.2em;    /* rem, em  rem은 root-font-size기준으로 사이즈 조정, em은 실재사용중인 폰트 사이즈를 기준으로 조정된다.*/
     float: left;
 }
+
+
+/* 스크롤 섹션 2번 */
+.main-message small {
+    display: block;
+    margin-bottom: 0.5em;
+    font-size: 1.2rem; 
+}
+#scroll-section-2 .main-message {
+    font-size: 3.5rem;
+}
+.desc-message {
+    font-weight: bold;
+    width: 50%;
+}
+.pin {
+    width: 1px;
+    height: 100px;
+    background: rgb(29, 29, 31);
+}
+
+
+/* 스크롤 섹션 3번 */
+.mid-message {
+    font-size: 2rem;
+    color: #888;
+    padding: 0 1rem;
+}
+.mid-message strong {
+    color: rgb(29, 29, 31);
+}
+.canvas-caption {
+    color: #888;
+    padding: 0 1rem;
+    font-size: 1.2rem;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 7rem;
+    background: seagreen;
+    color: white;
+}
+
+/* css 강의 8분부터 데스크탑 사이즈 맞추기 시작임 메모메모 */
